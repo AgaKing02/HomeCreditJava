@@ -78,12 +78,12 @@ public class Ball {
     }
 
     public void reflectHorizontal() {
-        setxDelta(-x);
+        setxDelta(-xDelta);
 
     }
 
     public void reflectVertical() {
-        setyDelta(-y);
+        setyDelta(-yDelta);
     }
 
     @Override
