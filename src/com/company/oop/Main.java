@@ -46,5 +46,9 @@ public class Main {
         e.setSalary(70000);
         System.out.println(e.raiseSalary(5));
 
+        Time time=new Time(2,5,6);
+        Time time1=time.previousSecond();
+        System.out.println(time1.toString());
+
     }
 }

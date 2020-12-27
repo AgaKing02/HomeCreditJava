@@ -47,13 +47,12 @@ public class Date {
             this.year = year;
         else throw new NumberFormatException("Error");
     }
+    public String withLeadingZero(int time){
+        return time>9? String.valueOf(time) :"0"+time;
+    }
 
     @Override
     public String toString() {
-        return "Date{" +
-                "day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return withLeadingZero(day)+"/"+withLeadingZero(month)+"/"+year;
     }
 }

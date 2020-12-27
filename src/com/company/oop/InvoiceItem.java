@@ -3,13 +3,13 @@ package com.company.oop;
 public class InvoiceItem {
     private String id;
     private String desc;
-    private int qty;
+    private int quantity;
     private double unitPrice;
 
     public InvoiceItem(String id, String desc, int qty, double unitPrice) {
         this.id = id;
         this.desc = desc;
-        this.qty = qty;
+        this.quantity = qty;
         this.unitPrice = unitPrice;
     }
 
@@ -21,16 +21,16 @@ public class InvoiceItem {
         return desc;
     }
 
-    public int getQty() {
-        return qty;
+    public int getQuantity() {
+        return quantity;
     }
 
     public double getUnitPrice() {
         return unitPrice;
     }
 
-    public void setQty(int qty) {
-        this.qty = qty;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public void setUnitPrice(double unitPrice) {
@@ -38,7 +38,7 @@ public class InvoiceItem {
     }
 
     public double getTotal() {
-        return getUnitPrice() * getQty();
+        return getUnitPrice() * getQuantity();
     }
 
     @Override
@@ -46,7 +46,7 @@ public class InvoiceItem {
         return "InvoiceItem{" +
                 "id='" + id + '\'' +
                 ", desc='" + desc + '\'' +
-                ", qty=" + qty +
+                ", qty=" + quantity +
                 ", unitPrice=" + unitPrice +
                 '}';
     }
