@@ -46,10 +46,10 @@ public class Time {
         setSecond(second);
     }
     public Time nextSecond(){
-        return new Time(this.hour,this.minute,++this.second);
+        return new Time(this.hour,this.minute,this.second+1);
     }
     public Time previousSecond(){
-        return new Time(this.hour,this.minute,--this.second);
+        return new Time(this.hour,this.minute,this.second-1);
     }
     public String withLeadingZero(int time){
         return time>9? String.valueOf(time) :"0"+time;
