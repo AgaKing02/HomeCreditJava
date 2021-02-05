@@ -7,17 +7,16 @@ public class MinMax {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the size");
         int size = in.nextInt();
-        int[] arr = new int[size];
         int max = 0;
         int min = 10000;
 
         for (int i = 0; i < size; i++) {
-            arr[i] = in.nextInt();
-            if (arr[i] > max) {
-                max = arr[i];
+            int a = in.nextInt();
+            if (a > max) {
+                max = a;
             }
-            if (arr[i] < min) {
-                min = arr[i];
+            if (a < min) {
+                min = a;
             }
         }
 
