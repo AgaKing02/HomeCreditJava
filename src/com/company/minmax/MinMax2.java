@@ -7,7 +7,7 @@ public class MinMax2 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter how many rectangles:");
         int size = in.nextInt();
-        int min=0;
+        int min=1000;
         for (int i=0;i<size;i++){
             System.out.println("Type a");
             int a = in.nextInt();
@@ -20,6 +20,6 @@ public class MinMax2 {
             }
         }
 
-        System.out.println("Area Min"+min);
+        System.out.println("Area Min "+min);
     }
 }

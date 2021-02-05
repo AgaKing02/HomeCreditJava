@@ -9,12 +9,9 @@ public class MinMax3 {
         int size = in.nextInt();
         int max=0;
         for (int i=0;i<size;i++){
-            System.out.println("Type a");
+            System.out.println("Type a and b");
             int a = in.nextInt();
-            System.out.println("Type b");
-
             int b = in.nextInt();
-
             if((a*b)>max){
                 max=a*b;
             }

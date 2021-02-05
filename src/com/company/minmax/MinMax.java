@@ -8,8 +8,9 @@ public class MinMax {
         System.out.println("Enter the size");
         int size = in.nextInt();
         int[] arr = new int[size];
-        int max = arr[0];
-        int min = arr[0];
+        int max = 0;
+        int min = 10000;
+
         for (int i = 0; i < size; i++) {
             arr[i] = in.nextInt();
             if (arr[i] > max) {
@@ -19,6 +20,7 @@ public class MinMax {
                 min = arr[i];
             }
         }
+
         System.out.println("Max " + max);
         System.out.println("Min " + min);
     }

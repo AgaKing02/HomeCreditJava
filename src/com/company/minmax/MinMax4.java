@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MinMax4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int min=0;
+        int min=1000;
         System.out.println("Type size");
         int size = in.nextInt();
         int at=0;
